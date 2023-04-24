@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: Inter;
+    
+}
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 7.5%;
+    background-color: rgb(31,34,72);
+    color: white;
+    align-items: center;
+    width: 100%;
+    height: 250px;
+}
+
+.logo{
+    font-family: Source Code Pro;
+    font-weight: Regular;
+    font-size: 80px;
+}
+
+.profile p{
+    justify-content: flex-end;
+    text-align: right;
+    padding: 6px 0px;
+    font-size: 24px;
+}
+
+.nav{
+    font-size: 35px;
+    border-bottom: 3px solid;
+    padding: 0px 7.5%;
+    display: flex;
+    height: 75px;
+    background-color: rgb(31,34,72);
+}
+
+.todo{
+    
+    background-color: rgb(83, 178, 212);
+    border-radius: 20px 20px 0px 0px;
+    padding: 15px;
+    
+    font-size: 32px;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    flex-basis: 0;
+    flex-shrink: 0;
+}
+
+.completed{
+    
+    background-color: rgb(217,217,217);
+    border-radius: 20px 20px 0px 0px;
+    padding: 15px;
+    
+    font-size: 32px;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    flex-basis: 0;
+    flex-shrink: 0;
+}
+
+.block {
+    display: flex;  /* use flexbox to position items */
+    align-items: center;  /* vertically center items */
+    border: 3px solid black;
+    border-radius: 20px;
+    background-color: white;
+    margin: 60px 10%;
+    height: 250px;
+    
+}
+  
+.left {
+    margin-right: 1rem;  /* add margin to the right of the button */
+    background: url("/css/images/button-image.png");
+    background-position: center ;
+    background-size: cover;
+    height: 100%;
+    width: 150px;
+    border-radius:20px 0px 0px 20px;
+    background-color: rgb(91,221,36);
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.subject{
+    color: rgba(0,0,0,1);
+    margin: 20px 1%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(217,217,217,1);
+    font-weight: Regular;
+    font-size: 25px;
+    text-align: left;
+    overflow: scroll;
+}
+
+.assignment{
+    color : rgba(123,123,123,1) !important;
+    margin: 0px 1.5% 14px 1.5%;
+    font-weight: Regular;
+    font-size: 18px;
+    text-align: left;
+    overflow: scroll;
+}
+
+.right{
+    height: 100%;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    column-gap: 30rem;
+}   
+
+.date_box{
+    width: 130px;
+    height: 130px;
+    margin: auto 30px auto 5px;
+    border-radius: 10px;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(247,85,103,1);
+    color: white;
+    font-weight: Bold;
+}
+
+.date{
+    margin: 5px 0px;
+    font-size: 40px;
+}
+
+.month{
+    margin-top: 12px;
+    font-size: 20px;
+}
+
+.hour{
+    font-size: 15px;
+}
+
+body {
+    background-color: rgba(240,240,240,1);
+}

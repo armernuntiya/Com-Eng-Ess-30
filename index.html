@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+    <head>
+        <title>Task Management</title>
+        <meta charset="UTF-8">
+        <link
+        href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap"
+        rel="stylesheet"
+        />
+        <link
+        href="https://fonts.googleapis.com/css?family=Inter&display=swap"
+        rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+
+    <body>
+        
+        <div class="container">
+            <div class="header">
+                <div class="logo">Task Management</div>
+                <div class="profile">
+                    <p>Student ID :</p>
+                    <p>Name Surname(TH)</p>
+                    <p>Name Surname(ENG)</p>
+                </div>
+            </div>
+                <div class="nav">
+                    <button onclick="ToDo()" class="todo">TO DO</button>
+                    <button onclick="completed()" class="completed">COMPLETED</button>
+                </div>
+            
+        </div>
+        <table style = "width:100%" id = "to-do-table">
+            <tr>
+                <div class="block">
+                    <button class="left"><alt="Button"> <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' fill='none' stroke='#fff' stroke-width='7' stroke-linecap='round' stroke-linejoin='round'><polyline fill="none" points="30,60 40,75 75,30 "/></svg></button>
+                    <div class="center">
+                        <div class="subject">
+                            subject
+                        </div>
+                        <br>
+                        <div class="assignment">
+                            assignment
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="date_box">
+                            <div class="month">JAN</div>
+                            <div class="date">XX</div>
+                            <div class="hour">HH:MM</div>
+                        </div>
+                    </div>
+                </div>
+            </tr>
+            <tr>
+                <div class="block">
+                    <button class="left"><alt="Button"><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' fill='none' stroke='#fff' stroke-width='7' stroke-linecap='round' stroke-linejoin='round'><polyline fill="none" points="30,60 40,75 75,30 "/></button>
+                    <div class="center">
+                        <div class="subject">
+                            subject
+                        </div>
+                        <div class="assignment">
+                            assignment
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="date_box">
+                            <div class="month">JAN</div>
+                            <div class="date">XX</div>
+                            <div class="hour">HH:MM</div>
+                        </div>
+                    </div>
+                </div>
+            </tr>
+
+    </body>
+</html>
