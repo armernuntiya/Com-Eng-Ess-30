@@ -92,6 +92,17 @@
     background-color: rgb(91,221,36);
 }
 
+.left2 {
+    margin-right: 1rem;  /* add margin to the right of the button */
+    background: url("/css/images/button-image.png");
+    background-position: center ;
+    background-size: cover;
+    height: 100%;
+    width: 150px;
+    border-radius:20px 0px 0px 20px;
+    background-color: rgb(224, 42, 42);
+}
+
 .center{
     display: flex;
     flex-direction: column;
