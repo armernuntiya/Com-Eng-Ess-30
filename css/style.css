@@ -83,9 +83,10 @@
   
 .left {
     margin-right: 1rem;  /* add margin to the right of the button */
-    background: url("/css/images/button-image.png");
+    background: url("/css/images/check.png");
     background-position: center ;
-    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 60px;
     height: 100%;
     width: 150px;
     border-radius:20px 0px 0px 20px;
@@ -94,9 +95,10 @@
 
 .left2 {
     margin-right: 1rem;  /* add margin to the right of the button */
-    background: url("/css/images/button-image.png");
+    background: url("/css/images/x.png");
     background-position: center ;
-    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 60px;
     height: 100%;
     width: 150px;
     border-radius:20px 0px 0px 20px;
@@ -119,7 +121,6 @@
     font-weight: Regular;
     font-size: 25px;
     text-align: left;
-    overflow: scroll;
 }
 
 .assignment{
@@ -168,4 +169,17 @@
 
 body {
     background-color: rgba(240,240,240,1);
+}
+
+@keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+
+.fade-out {
+    animation: fadeOut 0.5s;
 }
