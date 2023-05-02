@@ -1,4 +1,55 @@
 <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>รายการฝากซื้อ</title>
+        <link rel="stylesheet" href="style.css"></link>
+        <script src="script_item.js" defer></script>
+    </head>
+    <body>
+        <section>
+            <header><h1 id="app-name">รายการฝากซื้อ Group <span id="group-no"></span> </h1></header>
+        </section>
+        <section>
+            <header><h2 class="section-title">รายชื่อผู้มีสิทธิฝากซื้อ</h2><span class="section-subtitle">(สมาชิกในกลุ่ม)</span></header>
+            <ul id="member-list"> </ul>
+        </section>
+        <section>
+            <header><h2 class="section-title">รายการฝากซื้อ</h2></header>
+            <table class="main-table">
+                <thead>
+                    <tr>
+                        <th>ของที่ฝากซื้อ</th>
+                        <th>ชื่อผู้ฝากซื้อ</th>
+                        <th>ราคา (บาท)</th>
+                        <th>ดำเนินการ</th>
+                    </tr>
+                </thead>
+                <tbody id="main-table-body">
+                    
+                </tbody>
+                <tfoot>
+                    <tr id="newrow-form">
+                        <td><input id="item-to-add" type="text"/></td>
+                        <td>
+                            <select id="name-to-add">
+                            </select>
+                        </td>
+                        <td><input id="price-to-add" type="number"/></td>
+                        <td><button id="add-newrow" onclick=addItem()>เพิ่ม</button></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+        <section class="section-center">
+            <button class="button change-page-button" onclick="window.location.href='login.html'">Go to MyCourseville API Login Page</button>
+        </section>
+        <section class="section-credit">
+            &#169; 2110221 Computer Engineering Essentials (2022/2) &#169;
+        </section>
+    </body>
+</html>
+<!DOCTYPE html>
     <head>
         <title>Task Management</title>
         <meta charset="UTF-8">
@@ -17,11 +68,12 @@
         
         <div class="container">
             <div class="header">
-                <div class="logo">Task Management</div>
+                <div class="logo">Task Management1</div>
                 <div class="profile">
                     <p>Student ID :</p>
                     <p>Name Surname(TH) :</p>
                     <p>Name Surname(ENG) :</p>
+                    <button class="button logout-button" onclick=logout()>Logout</button>
                 </div>
             </div>
                 <div class="nav">
@@ -30,7 +82,7 @@
                 </div>
             
         </div>
-
+        <button class="button logout-button" onclick=logout()>Logout</button>
         <div style = "width:100%" id = "to-do-table">
                 <div class="block">
                     <button class="left" onclick = "moveRow(this)" ><alt="Button"> 
@@ -114,6 +166,6 @@
                     </div>
                 </div>
             </div>
-        <script src = "js.js"></script>
+        <script src = "script_cv.js"></script>
     </body>
 </html>

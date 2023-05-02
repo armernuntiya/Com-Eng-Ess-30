@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+            <title>Task Management</title>
+            <meta charset="UTF-8">
+            <link
+            href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap"
+            rel="stylesheet"
+            />
+            <link
+            href="https://fonts.googleapis.com/css?family=Inter&display=swap"
+            rel="stylesheet"
+            />
+            <link rel="stylesheet" href="./css/style.css">
+        <script src="script_cv.js" defer></script>
+    </head>
+    <body onload="getUserProfile();getCompEngEssCid();">
+        
+        <div>
+            <div class="container">
+                <div class="header">
+                    <div class="logo">Task Management</div>
+                    <div class="profile">
+                        <p>Student ID :</p>
+                        <p>Name Surname(TH) : <span id="thai-name-info"></span></br></p>
+                        <p>Name Surname(ENG) :  <span id="eng-name-info"></span></br></p>
+                    </div>
+                </div>
+                    <div class="nav">
+                        <button onclick="ToDo()" class="todo">TO DO</button>
+                        <button onclick="completed()" class="completed">COMPLETED</button>
+                    </div>
+                
+            </div>
+            
+            <div style = "width:100%" id = "to-do-table" >
+                <table class="main-table" style=width:100%>
+                    <thead>
+                        <tr id="main-table-head">
+                        </tr>
+                    </thead>
+                    <tbody id="main-table-body">
+                        <tr id=0>
+                            <td>...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div style = "width:100%" id = "completed-table" >
+                <table class="main-table" style=width:100%>
+                    <thead>
+                        <tr id="main-table-head">
+                        </tr>
+                    </thead>
+                    <tbody id="main-table-body2">
+                        <tr id=0>
+                            <td>...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+    </body>
+</html>
